@@ -12,11 +12,13 @@ const bookSeed = [
   {
     title: "The Dead Zone",
     author: "Stephen King",
+    link: "www.google.com",
     date: new Date(Date.now())
   },
   {
     title: "Lord of the Flies",
     author: "William Golding",
+    link: "www.google.com",
     date: new Date(Date.now())
   }
 ];

@@ -27,7 +27,8 @@ class SearchPage extends Component {
   saveBook = book => {
     StoredBooksAPI.saveBook({
       title: book.volumeInfo.title,
-      author: book.volumeInfo.authors
+      author: book.volumeInfo.authors,
+      link: book.volumeInfo.infoLink
     })
       .then(res => this.searchGBooks(this.state.search))
       .catch(err => console.log(err));

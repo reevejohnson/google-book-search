@@ -41,7 +41,7 @@ class SavedList extends Component {
                       {book.title} by {book.author}
                     </strong>
                     <DeleteButton onClick={() => this.deleteBook(book._id)} />
-                    <ViewButton href="/savedlist" />
+                    <ViewButton href={book.link}/>
                   </ListItem>
                 ))}
               </List>
